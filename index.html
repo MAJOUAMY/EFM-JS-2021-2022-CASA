@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commander des consoles</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <h1>commenderdes consoles</h1>
+    <form action="">
+        <div class="selection">
+            <div class="left">
+                <label for="console">console :</label>
+                <select name="console" id="console" value="">
+                    <option value=""> choisir un console</option>
+                    
+                </select>
+            </div>
+            <div class="right">
+                <label for="quantite">quantité :</label>
+                <input type="number"  id="quantite">
+            </div>
+        </div>
+
+        <button id="add">ajouter au panier</button>
+        <table id="tableConsole">
+            <h2>panier de commande</h2>
+            <tr>
+                <th>reference</th>
+                <th>quatité</th>
+                <th>images</th>
+                <th>actions</th>
+
+            </tr>
+           
+        </table>
+        <div>
+            <button id="prixht">prix HT</button>
+        <button id="prixttc">prix TTC</button>
+        </div>
+        
+        <div class="prix"><span>total HT</span> <span id="ht">0 dhs</span></div>
+        <div class="prix"><span>total TTC</span> <span id="ttc">0 dhs</span></div>
+        <button id="commander">commander</button>
+    </form>
+
+    <script src="main.js" ></script>
+</body>
+
+</html>
